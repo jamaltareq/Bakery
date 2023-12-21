@@ -1,0 +1,450 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.mainpage {
+    background: rgba(0, 0, 0, 0.2) url(../image/drew-coffman-1872.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 180px;
+    padding: 10px;
+}
+
+.listmain ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.listmain ul li a {
+    padding: 0 15px;
+    font-size: 18;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.listmain ul li a:hover {
+    color: #8e7754;
+    transition: .5s color;
+}
+
+.listmain ul li:nth-of-type(1) a::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: -32px;
+    left: 0;
+    background-color: #8e7754;
+}
+
+.contentMain {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 664px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    line-height: 1.8;
+}
+
+.contentMain h1 {
+    font-size: 76px;
+    font-family: "Alegreya";
+    font-weight: 400;
+}
+
+.contentMain p {
+    font-size: 24px;
+    width: 700px;
+    margin-bottom: 30px;
+}
+
+.buttons button {
+    padding: 20px 30px;
+    border-radius: 3px;
+    font-weight: 600;
+    color: white;
+}
+
+.buttons button:nth-of-type(1) {
+    background-color: #8e7754;
+    border: none;
+}
+
+.buttons button:nth-of-type(2) {
+    margin-left: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.buttons button:hover {
+    color: black;
+    background-color: white;
+    transition: .5s;
+}
+
+.mouseAnemation {
+    margin-top: 30px;
+    width: 40px;
+    height: 60px;
+    border-radius: 30px;
+    border: 2px solid #8e7754;
+    position: relative;
+}
+
+.mouseAnemation .span {
+    position: absolute;
+    width: 37px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #8e7754;
+    animation-name: example;
+    animation-duration: .3s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes example {
+    0% {
+        top: 0;
+    }
+    25% {
+        top: 5px;
+    }
+    50% {
+        top: 10px;
+    }
+    75% {
+        top: 15px;
+    }
+    100% {
+        top: 20px;
+    }
+}
+
+.weAre .container {
+    margin: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weAre .container .image {
+    width: 50%;
+    margin-right: 50px;
+}
+
+.weAre .container .image img {
+    width: 100%;
+}
+
+.weAre .container .content {
+    width: 50%;
+}
+
+.weAre .container .content h2 {
+    font-size: 2rem;
+    margin: 20px;
+}
+
+.weAre .container .content p {
+    margin: 30px;
+    color: gray;
+    line-height: 2;
+    font-size: 1.1rem;
+}
+
+.weAre .container .content ul {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+.weAre .container .content ul li {
+    line-height: 3;
+    color: gray;
+    display: flex;
+    align-items: center;
+}
+
+.weAre .container .content ul li i {
+    line-height: 3;
+    color: #8e7754;
+    font-size: 1.3rem;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border: #8e7754 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.our {
+    background-color: #f8f8f8;
+}
+
+.our .container {
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.our .container .content {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.our .container .content h2 {
+    font-size: 2rem;
+    margin: 20px;
+}
+
+.our .container .content p {
+    color: gray;
+    margin: 20px;
+    line-height: 2;
+}
+
+.our .container .image {
+    width: 50%;
+}
+
+.our .container .image img {
+    width: 100%;
+}
+
+.baking .container {
+    text-align: center;
+}
+
+.baking .container .titel h2 {
+    font-size: 2rem;
+    margin: 50px 0;
+}
+
+.baking .container .titel p {
+    font-size: 1.1rem;
+    margin: 20px;
+}
+
+.baking .container .card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.baking .container .card .section {
+    margin: 20px;
+}
+
+.baking .container .card .section img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.baking .container .card .section h3 {
+    font-size: 1.4rem;
+    margin: 10px;
+}
+
+.baking .container .card .section p {
+    font-size: 1.1rem;
+    color: gray;
+}
+
+.info {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+}
+
+.info .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info .container .content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.info .container .content p {
+    font-size: 1.1rem;
+    color: gray;
+    line-height: 2;
+}
+
+.info .container .content span {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.info .container .content ul {
+    list-style: none;
+}
+
+.info .container .content ul li {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    color: gray;
+    font-size: 1.1rem;
+}
+
+.info .container .content ul li i {
+    line-height: 3;
+    color: white;
+    font-size: 1.1rem;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #8e7754;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.listes {
+    background-color: #403d38;
+}
+
+.listes .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.listes .container div {
+    width: 25%;
+    margin: 50px 0;
+}
+
+.listes h3 {
+    color: #bdc9d7;
+}
+
+.listes p,
+.listes ul li {
+    color: white;
+    margin: 20px 0px;
+    line-height: 2;
+}
+
+.listes ul li {
+    list-style-type: none;
+    position: relative;
+    opacity: 1;
+}
+
+.listes ul li i {
+    margin-right: 10px;
+}
+
+.listes ul li::after {
+    content: "";
+    width: 100%;
+    height: .3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #bdc9d7;
+}
+
+.listes ul li:last-child:after {
+    content: "";
+    height: 0;
+}
+
+.addres {
+    background-image: url(../image/contact-details-map.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer {
+    background-color: #353330;
+}
+
+footer p {
+    color: white;
+}
+
+footer .container {
+    text-align: center;
+    padding: 100px;
+}
+
+footer img {
+    margin: 50px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+footer ul li {
+    padding: 5px;
+    font-size: 1.4rem;
+    width: 40px;
+    height: 40px;
+    background-color: #403d38;
+    margin: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li i {
+    color: #bdc9d7;
+}
+
+footer ul li:nth-of-type(1):hover {
+    background-color: blue;
+}
+
+footer ul li:nth-of-type(2):hover {
+    background-color: red;
+}
+
+footer ul li:nth-of-type(3):hover {
+    background-color: #2196f3;
+}
+
+footer ul li:nth-of-type(4):hover {
+    background-color: #03a9f4;
+}
